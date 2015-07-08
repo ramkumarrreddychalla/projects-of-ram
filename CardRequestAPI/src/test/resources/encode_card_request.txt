@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "cardTransactionId": {
+      "id": "http://jsonschema.net/cardTransactionId",
+      "type": "integer"
+    },
+    "messageTypeId": {
+      "id": "http://jsonschema.net/messageTypeId",
+      "type": "integer"
+    },
+    "cardIssuanceTypeId": {
+      "id": "http://jsonschema.net/cardIssuanceTypeId",
+      "type": "integer"
+    },
+    "encodedMagStripeData": {
+      "id": "http://jsonschema.net/encodedMagStripeData",
+      "type": "string"
+    },
+    "pan": {
+      "id": "http://jsonschema.net/pan",
+      "type": "string"
+    },
+    "cardName": {
+      "id": "http://jsonschema.net/cardName",
+      "type": "string"
+    },
+    "pin": {
+      "id": "http://jsonschema.net/pin",
+      "type": "string"
+    },
+    "pinOffset": {
+      "id": "http://jsonschema.net/pinOffset",
+      "type": "string"
+    },
+    "cvv2": {
+      "id": "http://jsonschema.net/cvv2",
+      "type": "string"
+    },
+    "expirationDate": {
+      "id": "http://jsonschema.net/expirationDate",
+      "type": "integer"
+    },
+    "expirationDateMMYY": {
+      "id": "http://jsonschema.net/expirationDateMMYY",
+      "type": "string"
+    },
+    "smartcardDeviceName": {
+      "id": "http://jsonschema.net/smartcardDeviceName",
+      "type": "string"
+    },
+    "cardProcessorTypeId": {
+      "id": "http://jsonschema.net/cardProcessorTypeId",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "cardTransactionId",
+    "messageTypeId",
+    "cardIssuanceTypeId",
+    "encodedMagStripeData",
+    "pan",
+    "cardName",
+    "cvv2",
+    "expirationDate",
+    "expirationDateMMYY",
+    "smartcardDeviceName",
+    "cardProcessorTypeId"
+  ]
+}
