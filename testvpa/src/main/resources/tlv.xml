@@ -1,0 +1,238 @@
+<?xml version="1.0" ?>
+<!DOCTYPE config [
+<!ELEMENT config 		(tagelement+)>
+<!ELEMENT tagelement	(tagname, tag, taglength, tagvalue)>
+<!ELEMENT tagname		(#PCDATA)>
+<!ELEMENT tag			(#PCDATA)>
+<!ELEMENT taglength	(#PCDATA)>
+<!ELEMENT tagvalue		(#PCDATA)>
+<!ATTLIST config pan CDATA #IMPLIED>
+<!ATTLIST config org CDATA #IMPLIED>
+<!ATTLIST config profile CDATA #REQUIRED>
+<!ATTLIST config profileid CDATA #REQUIRED>
+<!ATTLIST tagname category (VSDC|VLP|Domestic|International) "VSDC">
+]>
+<config pan="4444111111111111111-4444111111111999999" org="Great Lakes Credit Union" profile="Vendor Sample Output 1" profileid="0000000062" icvv="No" hash="">
+<tagelement>
+<tagname category="VSDC">Application Currency Code</tagname>
+<tag>9F51</tag>
+<taglength>02</taglength>
+<tagvalue>0997</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Currency Code</tagname>
+<tag>9F42</tag>
+<taglength>02</taglength>
+<tagvalue>0997</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Default Action</tagname>
+<tag>9F52</tag>
+<taglength>02</taglength>
+<tagvalue>C238</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Identifier (AID)</tagname>
+<tag>4F</tag>
+<taglength>08</taglength>
+<tagvalue>A0000000031010</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VLP">Application Interchange Profile</tagname>
+<tag>82</tag>
+<taglength>02</taglength>
+<tagvalue>7800</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Interchange Profile</tagname>
+<tag>82</tag>
+<taglength>02</taglength>
+<tagvalue>7C00</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Label</tagname>
+<tag>50</tag>
+<taglength>0B</taglength>
+<tagvalue>5669736120437265646974</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Preferred Name</tagname>
+<tag>9F12</tag>
+<taglength>0F</taglength>
+<tagvalue>4372656469746F2044652056697361</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Priority Indicator</tagname>
+<tag>87</tag>
+<taglength>01</taglength>
+<tagvalue>81</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Application Usage Control</tagname>
+<tag>9F07</tag>
+<taglength>02</taglength>
+<tagvalue>FF00</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Card Risk Management Data Object List 1</tagname>
+<tag>8C</tag>
+<taglength>15</taglength>
+<tagvalue>9F02069F03069F1A0295055F2A029A039C019F3704</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Card Risk Management Data Object List 2</tagname>
+<tag>8D</tag>
+<taglength>17</taglength>
+<tagvalue>8A029F02069F03069F1A0295055F2A029A039C019F3704</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Cardholder Verification Method List (VSDC)</tagname>
+<tag>8E</tag>
+<taglength>0E</taglength>
+<tagvalue>000000000000000042015E021F02</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Consecutive Transaction Limit (International - Country)</tagname>
+<tag>9F72</tag>
+<taglength>01</taglength>
+<tagvalue>04</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Consecutive Transaction Limit (International)</tagname>
+<tag>9F53</tag>
+<taglength>01</taglength>
+<tagvalue>04</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Cumulative Total Transaction Amount Upper Limit</tagname>
+<tag>9F5C</tag>
+<taglength>06</taglength>
+<tagvalue>000000000110</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Cumulative Total Transaction Amout Limit</tagname>
+<tag>9F54</tag>
+<taglength>06</taglength>
+<tagvalue>000000000100</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Dynamic Data Authentication Data Object List (DDOL)</tagname>
+<tag>9F49</tag>
+<taglength>09</taglength>
+<tagvalue>9F37049F21039F4102</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Action Code (Default)</tagname>
+<tag>9F0D</tag>
+<taglength>05</taglength>
+<tagvalue>F860A8A800</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Action Code (Denial)</tagname>
+<tag>9F0E</tag>
+<taglength>05</taglength>
+<tagvalue>0010000000</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Action Code (Online)</tagname>
+<tag>9F0F</tag>
+<taglength>05</taglength>
+<tagvalue>F868B8F800</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VLP">Issuer Action Code (Online)</tagname>
+<tag>9F0F</tag>
+<taglength>05</taglength>
+<tagvalue>0000000000</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Application Data</tagname>
+<tag>9F10</tag>
+<taglength>07</taglength>
+<tagvalue>06000A03000000</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Authentication Indicator</tagname>
+<tag>9F56</tag>
+<taglength>01</taglength>
+<tagvalue>80</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Code Table Index</tagname>
+<tag>9F11</tag>
+<taglength>01</taglength>
+<tagvalue>01</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Country Code</tagname>
+<tag>9F57</tag>
+<taglength>02</taglength>
+<tagvalue>0840</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Issuer Country Code</tagname>
+<tag>5F28</tag>
+<taglength>02</taglength>
+<tagvalue>0840</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Language Preference</tagname>
+<tag>5F2D</tag>
+<taglength>04</taglength>
+<tagvalue>656E6573</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Lower Consecutive Offline limit (Card)</tagname>
+<tag>9F58</tag>
+<taglength>01</taglength>
+<tagvalue>05</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Lower Consecutive Offline limit (Terminal)</tagname>
+<tag>9F14</tag>
+<taglength>01</taglength>
+<tagvalue>05</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Processing Options Data Object List (PDOL)</tagname>
+<tag>9F38</tag>
+<taglength>0C</taglength>
+<tagvalue>9F1A029F7A019F02065F2A02</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">SDA Tag List</tagname>
+<tag>9F4A</tag>
+<taglength>02</taglength>
+<tagvalue>8202</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Upper Consecutive Offline limit (Card)</tagname>
+<tag>9F59</tag>
+<taglength>01</taglength>
+<tagvalue>0A</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">Upper Consecutive Offline limit (Terminal)</tagname>
+<tag>9F23</tag>
+<taglength>01</taglength>
+<tagvalue>0A</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">VLP Funds Limit</tagname>
+<tag>9F77</tag>
+<taglength>06</taglength>
+<tagvalue>000000001000</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">VLP Issuer Authorization Code</tagname>
+<tag>9F74</tag>
+<taglength>06</taglength>
+<tagvalue>564C50313233</tagvalue>
+</tagelement>
+<tagelement>
+<tagname category="VSDC">VLP Single Transaction Limit</tagname>
+<tag>9F78</tag>
+<taglength>06</taglength>
+<tagvalue>000000000500</tagvalue>
+</tagelement>
+</config>
