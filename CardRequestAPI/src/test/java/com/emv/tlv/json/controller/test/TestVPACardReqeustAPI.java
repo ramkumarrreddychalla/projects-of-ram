@@ -8,9 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import com.emv.tlv.json.controller.VPARestURIConstants;
+import com.emv.tlv.vo.CardTransactionStatus;
 
 public class TestVPACardReqeustAPI {
 
@@ -65,9 +67,12 @@ public class TestVPACardReqeustAPI {
 		String strJson = readJsonfromFile();
 		//restTemplate.exchange(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, HttpMethod.POST, strJson, Map.class);
 		//Map<String, String> response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, Map.class);
-		String response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, String.class);
+		//String response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, String.class);
+		ResponseEntity<CardTransactionStatus> response = restTemplate.postForEntity(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, CardTransactionStatus.class);
 		//restTemplate.exchange(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, HTTPEntity<String>, String.class);
-		System.out.println("response >>> "+response);
+		System.out.println("response >>> "+response.getBody().getStatusCode());
+		System.out.println("response >>> "+response.getStatusCode());
+		System.out.println("response >>> "+response.getHeaders().getLocation());
 		//printMapData(response);
 	}
 	
