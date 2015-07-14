@@ -66,6 +66,7 @@ public class TestVPACardReqeustAPI {
 		//restTemplate.exchange(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, HttpMethod.POST, strJson, Map.class);
 		//Map<String, String> response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, Map.class);
 		String response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, String.class);
+		//restTemplate.exchange(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, HTTPEntity<String>, String.class);
 		System.out.println("response >>> "+response);
 		//printMapData(response);
 	}
