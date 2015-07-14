@@ -7,6 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
 
 import com.emv.tlv.json.controller.VPARestURIConstants;
@@ -57,11 +58,16 @@ public class TestVPACardReqeustAPI {
     		}
         return strLine1;
 	}
+	
+	//732 318 5887
 	private static void testParseJsontoMap() {
 		RestTemplate restTemplate = new RestTemplate();
 		String strJson = readJsonfromFile();
-		Map<String, String> response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, Map.class);
-		printMapData(response);
+		//restTemplate.exchange(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, HttpMethod.POST, strJson, Map.class);
+		//Map<String, String> response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, Map.class);
+		String response = restTemplate.postForObject(SERVER_URI+VPARestURIConstants.PARSE_JSON_TO_MAP, strJson, String.class);
+		System.out.println("response >>> "+response);
+		//printMapData(response);
 	}
 	
 	private static void printMapData(Map<String, String> map){
