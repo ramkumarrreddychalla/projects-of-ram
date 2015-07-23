@@ -12,6 +12,9 @@ import com.google.gson.JsonParser;
 public class GsonParser {
     public static String json = "{\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"}";
     
+    public static void writeToFile(Map<String, String> map){
+    	
+    }
     public static Map<String, String> parseJson(String strJson) {
     	Map<String, String> jsonMap = new HashMap<String, String>();
         JsonElement ele = new JsonParser().parse(strJson);

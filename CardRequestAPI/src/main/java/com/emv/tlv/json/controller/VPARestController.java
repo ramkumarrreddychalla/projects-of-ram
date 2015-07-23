@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.emv.tlv.json.parser.GsonParser;
+import com.emv.tlv.json.transaction.TransactionManager;
 import com.emv.tlv.vo.CardTransactionStatus;
 
 /**
@@ -59,6 +60,7 @@ public class VPARestController {
 		CardTransactionStatus status = new CardTransactionStatus();
 		try{
 			 map = GsonParser.parseJson(strJson);
+			 TransactionManager.writeToFile(map);
 		}catch(Exception exp){
 			status.setCardTransactionId(0);
 			status.setStatusCode(Integer.parseInt(HttpStatus.BAD_REQUEST.toString()));
