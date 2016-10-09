@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DaveLCorpWebapp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="DaveLCorpWebapp.war">
+      <element id="artifact" artifact-name="DaveLCorpWebapp:war exploded" />
+    </root>
+  </artifact>
+</component>

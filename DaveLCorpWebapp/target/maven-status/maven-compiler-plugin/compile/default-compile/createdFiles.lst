@@ -1,0 +1,12 @@
+com\davelcorp\application\configuration\HelloWorldInitializer.class
+com\davelcorp\application\configuration\HelloWorldConfiguration.class
+com\davelcorp\application\service\BranchServiceImpl.class
+com\davelcorp\application\service\ProfileService.class
+com\davelcorp\application\model\User.class
+com\davelcorp\application\controller\ProfileRestController.class
+com\davelcorp\application\service\ProfileServiceImpl.class
+com\davelcorp\application\service\BranchService.class
+com\davelcorp\application\model\ProfileType.class
+com\davelcorp\application\model\Branch.class
+com\davelcorp\application\configuration\CORSFilter.class
+com\davelcorp\application\model\Profile.class
